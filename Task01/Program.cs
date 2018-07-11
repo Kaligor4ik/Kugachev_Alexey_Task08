@@ -10,6 +10,17 @@ namespace Task01
     {
         static void Main(string[] args)
         {
+            RouletteByLinkedList<Man> linkedList = new RouletteByLinkedList<Man>(10);
+            linkedList.Print();
+            linkedList.Go();
+
+            Console.WriteLine();
+
+            RouletteByList<Man> list = new RouletteByList<Man>(10);
+            list.Print();
+            list.Go();
+
+            Console.ReadKey();
         }
     }
 }
